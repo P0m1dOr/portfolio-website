@@ -1,4 +1,24 @@
-$danger: rgb(255, 0, 255);
-$primary: green;
-$success: yellow;
 @import "~bootstrap/scss/bootstrap";
+
+.menu-btn {
+    color: #fff;
+    position: relative;
+    &:hover {
+        color: rgb(248, 195, 80);
+    }
+    &:hover::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        background-color: rgb(248, 195, 80);
+        width: auto;
+        height: 1px;
+    }
+}
+
+.contact-items {
+    width: 50px;
+    height: 50px;
+    border: gray solid 1px;
+}
+
