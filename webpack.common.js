@@ -1,5 +1,4 @@
 const path = require("path");
-
 const loader = require("sass-loader");
 
 module.exports = {
@@ -10,22 +9,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.html$/,
-                use: [
-                    "html-loader"
-                ]
-            },
-            {
-                test: /\.(svg|png|jpg|gif)$/,
+                test: /\.html$/i,
                 use: {
-                    loader: "file-loader",
-                    options: {
-                        name: "[name].[hash].[ext]",
-                        outpurPath: "imgs"
-                    }
+                    loader: "html-loader"
                 }
-            }
+            },
+            
         ]
     }
-
 };
