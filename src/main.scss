@@ -12,7 +12,7 @@ $white: #fff;
         width:100%;
     }
     &::after{
-        transition: width .3s ease-in-out;
+        transition: width .5s ease-in-out;
         content: '';
         display: block;
         position: absolute;
@@ -26,8 +26,7 @@ $white: #fff;
 /* Portfolio */
 
 .portfolio-items {
-    max-width: 50%;
-    max-height: auto;
+  
 }
 
 
@@ -71,5 +70,14 @@ $white: #fff;
     &:hover {
         filter: drop-shadow(0 0 10px rgb(0, 0, 0))
     }
+}
+.scaling{
+    transition:.3s transform  ease-in,
+    border-radius .3s    ease-in;
+}
+.scaling:hover{
+    transform:scale(1.2);
+    border-radius:1rem;
+    
 }
 @import "~bootstrap/scss/bootstrap";
