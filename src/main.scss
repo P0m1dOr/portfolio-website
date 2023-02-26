@@ -25,8 +25,24 @@ $white: #fff;
 
 /* Portfolio */
 
+.scaling{
+    max-width: 100%;
+    height: auto;
+    transition:.3s transform ease-in, border-radius .3s ease-in, translate .3s ease-in;
+    &:hover {
+        transform:scale(1.1);
+        border-radius:1rem;
+        z-index: 100;
+    }
+    &:nth-child(1) {
+        top: 50px;
+        right: 50px;
+    }
+}
+
 .portfolio-items {
-  
+    max-width: 50%;
+    
 }
 
 
@@ -74,10 +90,10 @@ $white: #fff;
 .scaling{
     transition:.3s transform  ease-in,
     border-radius .3s    ease-in;
+    &:hover {
+        transform:scale(1.2);
+        border-radius:1rem;
+    }
 }
-.scaling:hover{
-    transform:scale(1.2);
-    border-radius:1rem;
-    
-}
+
 @import "~bootstrap/scss/bootstrap";
