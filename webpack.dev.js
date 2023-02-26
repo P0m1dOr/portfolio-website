@@ -9,6 +9,13 @@ module.exports = merge(common, {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
+    devServer:{
+        static: path.resolve(__dirname, 'src'),
+        port: 8080,
+        open: true,
+        hot: true,
+        
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html"
