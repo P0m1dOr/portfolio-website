@@ -1,4 +1,11 @@
 $white: #fff;
+$primary: rgb(185,2,185);
+
+h1 {
+    filter: drop-shadow(0 0 10px $primary)
+}
+
+
 
 .menu-bt {
     position: relative;
@@ -28,23 +35,19 @@ $white: #fff;
 .scaling{
     max-width: 100%;
     height: auto;
-    transition:.3s transform ease-in, border-radius .3s ease-in, translate .3s ease-in;
+    transition:.3s transform linear;
     &:hover {
-        transform:scale(1.1);
-        border-radius:1rem;
-        z-index: 100;
-    }
-    &:nth-child(1) {
-        top: 50px;
-        right: 50px;
-    }
-}
-
-.portfolio-items {
-    max-width: 50%;
+        transform: translateX(5px) translateY(5px);
+    };
     
 }
 
+
+.portfolio-items {
+    max-width: 48%;
+    background-color: $primary;
+    
+}
 
 
 
@@ -87,13 +90,6 @@ $white: #fff;
         filter: drop-shadow(0 0 10px rgb(0, 0, 0))
     }
 }
-.scaling{
-    transition:.3s transform  ease-in,
-    border-radius .3s    ease-in;
-    &:hover {
-        transform:scale(1.2);
-        border-radius:1rem;
-    }
-}
+
 
 @import "~bootstrap/scss/bootstrap";
