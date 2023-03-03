@@ -1,4 +1,5 @@
-import bootstrap from 'bootstrap';
+import Popper from 'popper.js'
+import bootstrap from 'bootstrap'
 import './main.scss'
 import Alert from 'bootstrap/js/dist/alert'
 import { Tooltip, Toast, Popover } from 'bootstrap'

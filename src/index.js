@@ -1,4 +1,6 @@
 
+
+
 document.querySelector('.theme-button').addEventListener('click',()=>{
     var body = document.querySelector('html');
     console.log('click');
@@ -26,3 +28,11 @@ document.querySelector('.theme-button').addEventListener('click',()=>{
 
     }
 });
+
+var typed1 = new Typed(".mov", {
+    strings: ["developer ^2000", "designer ^2000"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+});
+

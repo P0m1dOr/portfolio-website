@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru" data-bs-theme="Light">
+<html lang="ru" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio</title>
+    <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Mynerve&family=Nova+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="">
@@ -25,35 +32,43 @@
                         <a class=" nav-link" href="#"><span class="menu-bt">About me</span> </a>
                         <a class=" nav-link" href="#"><span class="menu-bt">Portfolio</span> </a>
                         <a class=" nav-link" href="#"><span class="menu-bt">Contact</span> </a>
-                        <a href="#" class="nav-link  theme-button"><span class="menu-bt" id="btnSwitch">Switch to Light Theme</span> </a>
+                        <a href="#" class="nav-link  theme-button"><span class="menu-bt" id="btnSwitch">Switch to Dark Theme</span> </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="home-page">
-            <div class="container d-flex justify-content-between">
+        <section class="home-page d-flex text-center text-white">
+            <div class="container d-flex align-items-center justify-content-around flex-wrap">
                 <div class="justify-content-center d-flex flex-column">
-                    <h1>Я Сысолетин Александр</h1>
-                    <p>web-designer</p>
-                    <p>web-developer</p>
+                    <div class=""><div class="h1">I'm Sysoletin Alexandr</div></div>
+                    <div class="typed-strings" id="typed-text">
+                        <p class="text-white" style="--bs-text-opacity: .6;">Web-<span class="mov"></span></p>
+                    </div>
+                    <span class="typed"></span>
                 </div>
-                <img src="./img/home-page(1).png" alt="" width="500" >
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>About me</h1>
-                <div class="d-flex justify-content-between">
-                    <p>/*Content*/  /*разрабатываю и переделываю сайты, вестаю сайты с матеков, использую в работе различные плагины и библиотеки (jQuery, Bootstrap, webpack, Sass, gFonts, fontawesome и тд)*/</p>
-                    <img src="#" alt="" width="50" height="50">
+                <div class="home-image rounded-circle d-flex justify-content-center align-items-center">
+                    <img src="./img/home-img(2).jpg" alt="" width="500" class="rounded-circle">
                 </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <h1 class="m-5 text-center">Portfolio</h1>
+            <div class="container mt-5 pt-5">
+                <h2 class="text-center">About me</h2>
+                <div class="d-flex justify-content-around gap-3">
+                    <div class="aboutmecontent">
+                        <p class="text-success-emphasis">/*Content*/  /*разрабатываю и переделываю сайты, вестаю сайты с матеков, использую в работе различные плагины и библиотеки (jQuery, Bootstrap, webpack, Sass, gFonts, fontawesome и тд)*/</p>
+                    </div>
+                    <div class="skills">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio d-flex">
+            <div class="container align-items-center">
+                <h2 class="m-5 text-center">Portfolio</h2>
                 <div class="">
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
                         <div class="portfolio-items"><a class="" href="https://p0m1dOr.github.io/Phototime"><img class=" scaling" src="./img/Phototime.png" alt=""></a></div>
@@ -66,7 +81,7 @@
         </section>
         <section class="bg-bs-dark">
             <div class="container">
-                <h1 class="fs-2 text-center p-5">Contacts</h1>
+                <h2 class="fs-2 text-center p-5">Contacts</h2>
                 <ul class="d-flex justify-content-center list-unstyled m-0 p-5">
                     <li class="m-3 mb-0 mt-0">
                         <a class="d-block border border-white border-1 contact-items rounded-circle position-relative content-image-1"
