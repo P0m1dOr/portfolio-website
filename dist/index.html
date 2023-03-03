@@ -5,68 +5,101 @@
     <meta charset=UTF-8>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <title>Portfolio</title>
-    <script defer=defer src=main.5e54792342d2b28afcd0.bundle.js></script>
+    <script defer=defer src=http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js></script>
+    <script defer=defer src=https://unpkg.com/@popperjs/core@2></script>
+    <script defer=defer src=https://cdn.jsdelivr.net/npm/typed.js@2.0.12></script>
+    <link rel=preconnect href=https://fonts.googleapis.com>
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Mynerve&family=Nova+Mono&display=swap"
+        rel=stylesheet>
+    <script defer=defer src=main.ddc81ef76ccb36a295d3.bundle.js></script>
     <script defer=defer src=vendor.bf51432881bab9971f05.bundle.js></script>
-    <link href=vendor.f3c888c6f17d62f131b8.css rel=stylesheet>
+    <link href=vendor.72a7ec2ae9828c4dc1b1.css rel=stylesheet>
 </head>
 
 <body class="">
-    <header>
+    <header class="sticky-top header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class=container-fluid><a class=navbar-brand href=#>Navbar</a> <button class=navbar-toggler type=button
-                    data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup aria-controls=navbarNavAltMarkup
-                    aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button>
-                <div class="collapse navbar-collapse" id=navbarNavAltMarkup>
-                    <div class="navbar-nav me-auto"><a class=nav-link aria-current=page href=#><span
-                                class=menu-bt>Home</span> </a><a class=nav-link href=#><span class=menu-bt>About
-                                me</span> </a><a class=nav-link href=#><span class=menu-bt>Portfolio</span> </a><a
-                            class=nav-link href=#><span class=menu-bt>Contact</span> </a><a href=#
-                            class="nav-link theme-button"><span class=menu-bt id=btnSwitch>Switch to Light
-                                Theme</span></a></div>
+            <div class="container-fluid justify-content-between"><a class=navbar-brand href=#>Navbar</a> <button
+                    class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarNavAltMarkup
+                    aria-controls=navbarNavAltMarkup aria-expanded=false aria-label="Toggle navigation"><span
+                        class=navbar-toggler-icon></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id=navbarNavAltMarkup>
+                    <div class=navbar-nav><a class=nav-link aria-current=page href=#><span class=menu-bt>Home</span>
+                        </a><a class=nav-link href=#><span class=menu-bt>About me</span> </a><a class=nav-link
+                            href=#><span class=menu-bt>Portfolio</span> </a><a class=nav-link href=#><span
+                                class=menu-bt>Contact</span> </a><a href=# class="nav-link theme-button"><span
+                                class=menu-bt id=btnSwitch>Switch to Dark Theme</span></a></div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <div class="container d-flex justify-content-between">
-                <div class=align-item-center>
-                    <h1>Я Сысолетин Александр</h1>
-                    <p>web-designer</p>
-                    <p>web-developer</p>
-                </div><img src=35b08dc6f8176e383f6d.png alt="">
+        <section class="home-page d-flex text-center text-white">
+            <div class="container d-flex align-items-center justify-content-around flex-wrap">
+                <div class="justify-content-center d-flex flex-column">
+                    <div class="">
+                        <div class=h1>I'm Sysoletin Alexandr</div>
+                    </div>
+                    <div class=typed-strings id=typed-text>
+                        <p class=text-white style=--bs-text-opacity:.6>Web-<span class=mov></span></p>
+                    </div><span class=typed></span>
+                </div>
+                <div class="home-image rounded-circle d-flex justify-content-center align-items-center"><img
+                        src=img/c88078d9c36fcec93fbe.jpg alt="" width=500 class=rounded-circle></div>
             </div>
         </section>
         <section>
-            <div class=container>
-                <h1>About me</h1>
-                <div class="d-flex justify-content-between">
-                    <p>/*Content*/ /*разрабатываю и переделываю сайты, вестаю сайты с матеков, использую в работе
-                        различные плагины и библиотеки (jQuery, Bootstrap, webpack, Sass, gFonts, fontawesome и тд)*/
-                    </p><img src=# alt="">
+            <div class="container mt-5 pt-5">
+                <h2 class=text-center>About me</h2>
+                <div class="d-flex justify-content-around gap-3">
+                    <div class=aboutmecontent>
+                        <p class=text-success-emphasis>/*Content*/ /*разрабатываю и переделываю сайты, вестаю сайты с
+                            матеков, использую в работе различные плагины и библиотеки (jQuery, Bootstrap, webpack,
+                            Sass, gFonts, fontawesome и тд)*/</p>
+                    </div>
+                    <div class=skills>
+                        <div class=progress role=progressbar aria-label="Success example" aria-valuenow=25
+                            aria-valuemin=0 aria-valuemax=100>
+                            <div class="progress-bar bg-success" style=width:25%></div>
+                        </div>
+                        <div class=progress role=progressbar aria-label="Success example" aria-valuenow=25
+                            aria-valuemin=0 aria-valuemax=100>
+                            <div class="progress-bar bg-success" style=width:25%></div>
+                        </div>
+                        <div class=progress role=progressbar aria-label="Success example" aria-valuenow=25
+                            aria-valuemin=0 aria-valuemax=100>
+                            <div class="progress-bar bg-success" style=width:25%></div>
+                        </div>
+                        <div class=progress role=progressbar aria-label="Success example" aria-valuenow=25
+                            aria-valuemin=0 aria-valuemax=100>
+                            <div class="progress-bar bg-success" style=width:25%></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class=container>
-                <h1 class="m-5 text-center">Portfolio</h1>
+        <section class="portfolio d-flex">
+            <div class="container align-items-center">
+                <h2 class="m-5 text-center">Portfolio</h2>
                 <div class="">
                     <div class="d-flex flex-wrap gap-3 justify-content-center">
                         <div class=portfolio-items><a class="" href=https://p0m1dOr.github.io/Phototime><img
-                                    class=scaling src=821287cec87b5e4ce74f.png alt=""></a></div>
+                                    class=scaling src=img/821287cec87b5e4ce74f.png alt=""></a></div>
                         <div class=portfolio-items><a class="" href=https://p0m1dor.github.io/zaverstayu/><img
-                                    class=scaling src=e4115ee43b251eb53b94.png alt=""></a></div>
+                                    class=scaling src=img/e4115ee43b251eb53b94.png alt=""></a></div>
                         <div class=portfolio-items><a class="" href=https://p0m1dOr.github.io/Tajem><img class=scaling
-                                    src=f7cb087e4ffaaae2178b.png alt=""></a></div>
+                                    src=img/f7cb087e4ffaaae2178b.png alt=""></a></div>
                         <div class=portfolio-items><a class="" href=https://p0m1dOr.github.io/ActiveBox><img
-                                    class=scaling src=5e95600352833d30dbb5.png alt=""></a></div>
+                                    class=scaling src=img/5e95600352833d30dbb5.png alt=""></a></div>
                     </div>
                 </div>
             </div>
         </section>
         <section class=bg-bs-dark>
             <div class=container>
-                <h1 class="fs-2 text-center p-5">Contacts</h1>
+                <h2 class="fs-2 text-center p-5">Contacts</h2>
                 <ul class="d-flex justify-content-center list-unstyled m-0 p-5">
                     <li class="m-3 mb-0 mt-0"><a
                             class="d-block border border-white border-1 contact-items rounded-circle position-relative content-image-1"

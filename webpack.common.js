@@ -7,6 +7,9 @@ module.exports = {
         vendor: "./src/vendor.js"
         
     },
+    output:{
+        assetModuleFilename: 'img/[hash][ext][query]'
+    },
     module: {
         rules: [
             {
