@@ -10,13 +10,13 @@
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Mynerve&family=Nova+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Mynerve&family=Nova+Mono&family=Rubik+Iso&family=Shantell+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="">
     <header class="sticky-top header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
             <div class="container-fluid justify-content-between">
                 
                     <a class="navbar-brand" href="#">Navbar</a>
@@ -40,38 +40,45 @@
     </header>
     <main>
         <section class="home-page d-flex text-center text-white">
-            <div class="container d-flex align-items-center justify-content-around flex-wrap">
+            <div class="container d-flex align-items-center justify-content-around flex-wrap gap-5">
                 <div class="justify-content-center d-flex flex-column">
                     <div class=""><div class="h1">I'm Sysoletin Alexandr</div></div>
                     <div class="typed-strings" id="typed-text">
-                        <p class="text-white" style="--bs-text-opacity: .6;">Web-<span class="mov"></span></p>
+                        <p class="text-white" style="--bs-text-opacity: .6; font-family: 'Rubik Iso', cursive;">Web-<span class="mov" style="font-family: 'Rubik Iso', cursive;"></span></p>
                     </div>
-                    <span class="typed"></span>
+                    <span class="typed" style="font-family: 'Rubik Iso', cursive;"></span>
                 </div>
                 <div class="home-image rounded-circle d-flex justify-content-center align-items-center">
-                    <img src="./img/home-img(2).jpg" alt="" width="500" class="rounded-circle">
+                    <img src="./img/home-img(2).jpg" alt="" width="400" class="rounded-circle">
                 </div>
             </div>
         </section>
-        <section>
+        <section class="about-me d-flex align-items-center pb-5">
             <div class="container mt-5 pt-5">
                 <h2 class="text-center">About me</h2>
-                <div class="d-flex justify-content-around gap-3">
+                <div class="d-flex gap-5 justify-content-between flex-wrap">
                     <div class="aboutmecontent">
-                        <p class="text-success-emphasis">/*Content*/  /*разрабатываю и переделываю сайты, вестаю сайты с матеков, использую в работе различные плагины и библиотеки (jQuery, Bootstrap, webpack, Sass, gFonts, fontawesome и тд)*/</p>
+                        <p class="">Я начинающий веб-разработчик.</p> 
+                        <p>Мои проекты основаны на разработке сайтов или переделывании некоторых из них. Часто я тренируюсь, вестая сайты с матеков доступных в интернете.</p>
+                        <p>В своей работе я использую различные плагины и библиотеки такие как jQuery, Bootstrap, webpack, Typed.js, также язык таблиц стилей Sass, сервисами Google Fonts(для шрифтов), fontawesome(для некоторых иконок) и другие.</p>
                     </div>
                     <div class="skills">
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success" style="width: 25%"></div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success" style="width: 25%"></div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success" style="width: 25%"></div>
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar bg-success" style="width: 25%"></div>
+                        <h3 style="font-size: 2rem;">Skills</h3><br>
+                        <p style="font-size: 1.5rem; line-height: 15px;">Html</p>
+                        <div class="progress mb-1 mt-1" role="progressbar" aria-label="Success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-danger" style="width: 75%"></div>
+                        </div><br>
+                        <p style="font-size: 1.5rem; line-height: 15px;">Css</p>
+                        <div class="progress mb-1 mt-1" role="progressbar" aria-label="Success example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-info" style="width: 80%"></div>
+                        </div><br>
+                        <p style="font-size: 1.5rem; line-height: 15px;">Js</p>
+                        <div class="progress mb-1 mt-1" role="progressbar" aria-label="Success example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning" style="width: 35%"></div>
+                        </div><br>
+                        <p style="font-size: 1.5rem; line-height: 15px;">Bootstrap</p>
+                        <div class="progress mb-1 mt-1" role="progressbar" aria-label="Success example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 45%"></div>
                         </div>
                     </div>
                 </div>

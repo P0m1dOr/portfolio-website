@@ -1,6 +1,3 @@
-
-
-
 document.querySelector('.theme-button').addEventListener('click',()=>{
     var body = document.querySelector('html');
     console.log('click');
@@ -29,6 +26,8 @@ document.querySelector('.theme-button').addEventListener('click',()=>{
     }
 });
 
+/* Typed.js */
+
 var typed1 = new Typed(".mov", {
     strings: ["developer ^2000", "designer ^2000"],
     typeSpeed: 150,
@@ -36,3 +35,22 @@ var typed1 = new Typed(".mov", {
     loop: true
 });
 
+/* Navbar */
+
+var navbar = document.getElementById('navbar');
+var hide = false
+window.onscroll = function(){
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if (scrollTop > 50){
+        if (!hide){
+            navbar.classList.remove("bg-body-tertiary");
+            hide = true;
+        }
+    }
+    else {
+        if (hide) {
+            navdar.classList.add("bg-body-tertiary");
+            hide = false;
+        }
+    }
+}

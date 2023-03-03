@@ -3,11 +3,17 @@ $primary: rgb(185,2,185);
 $success: rgb(248, 195, 80);
 $h1-font-size: 4rem;
 $h2-font-size: 3rem;
+$danger: rgb(255, 102, 0);
+$info: #006bc0;
 
 h1, h2, h3, h4, h5, h6, p, span, a {
-    /*font-family: 'Mynerve', cursive;*/
     font-family: 'Caveat', cursive;
+    user-select: none;
 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik Iso', cursive;
 }
 
 h1 {
@@ -62,8 +68,8 @@ span, p {
 }
 
 .home-image {
-    width: 525px;
-    height: 525px;
+    width: 425px;
+    height: 425px;
     border: rgba(255, 255, 255, 0.25) solid 1px;
     background-color: rgba(255, 255, 255, 0.075);
 }
@@ -72,10 +78,18 @@ span, p {
 
 /*About me*/
 
+.about-me {
+    height: 100vh;
+}
+
 .circle-img {
     box-sizing: border-box;
     width: 400px;
     height: 400px;
+}
+
+.skills {
+    width: 100%;
 }
 
 
