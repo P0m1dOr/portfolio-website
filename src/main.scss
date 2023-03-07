@@ -1,46 +1,165 @@
 $white: #fff;
-$primary: rgb(185,2,185);
+$primary: rgb(185, 2, 185);
 $success: rgb(248, 195, 80);
 $h1-font-size: 4rem;
 $h2-font-size: 3rem;
 $danger: rgb(255, 102, 0);
 $info: #006bc0;
+$tertiary: #adb5bd;
 
-h1, h2, h3, h4, h5, h6, p, span, a {
-    font-family: 'Caveat', cursive;
+
+@font-face {
+    font-family: "Catallina";
+    src: url(#);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+    font-family: 'Montserrat Alternates', sans-serif;
     user-select: none;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rubik Iso', cursive;
+h2 {
+    position: relative;
+    max-width: fit-content;
+    
+    &::before {
+        content: "<h2>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+    &::after {
+        content: "</h2>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        bottom: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+    & .blast{
+        color: rgb(92, 190, 252);
+    }
 }
 
+.about-me-content p {
+    position: relative;
+    &::before {
+        content: "<p>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+    &::after {
+        content: "</p>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        bottom: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+}
+
+form {
+    position: relative;
+    margin-top: 72px;
+    margin-left: 48px;
+    &::before {
+        content: "<form>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+    &::after {
+        content: "</form>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        bottom: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+}
+
+.carousel-part {
+    position: relative;
+    margin-top: 72px;
+    margin-left: 48px;
+    &::before {
+        content: "<img>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+    &::after {
+        content: "</img>";
+        color: #515152;
+        font-size: 18px;
+        position: absolute;
+        bottom: -2rem;
+        left: -2rem;
+        font-family: 'La Belle Aurore', cursive;
+    }
+}
+
+
+
+
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merienda', cursive;
+}
+*/
 h1 {
     font-size: large;
 }
 
-span, p {
+span,
+p {
     font-size: 2rem;
 }
 
 .menu-bt {
     position: relative;
     font-size: 1.5rem;
-    
+
     &:hover {
         color: $success;
-        
+
     }
+
     &:hover::after {
-        width:100%;
+        width: 100%;
     }
-    &::after{
+
+    &::after {
         transition: width .5s ease-in-out;
         content: '';
         display: block;
         position: absolute;
-        left:0;
+        left: 0;
         background-color: $success;
         width: 0%;
         height: 2px;
@@ -68,10 +187,17 @@ span, p {
 }
 
 .home-image {
-    width: 425px;
-    height: 425px;
+    min-width: 215px;
+    height: 215px;
     border: rgba(255, 255, 255, 0.25) solid 1px;
     background-color: rgba(255, 255, 255, 0.075);
+    box-shadow: 0px 0px 50px #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-page {
+        height: 75vh;
+    }
 }
 
 
@@ -79,7 +205,7 @@ span, p {
 /*About me*/
 
 .about-me {
-    height: 100vh;
+    height: auto;
 }
 
 .circle-img {
@@ -90,6 +216,22 @@ span, p {
 
 .skills {
     width: 100%;
+    margin-bottom: 30px;
+}
+
+.about-me-title {
+    margin-left: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    max-width: fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-me {
+        height: auto;
+    }
+
 }
 
 
@@ -98,28 +240,32 @@ span, p {
 .portfolio-items {
     max-width: 48%;
     background-color: $primary;
-    
+
 }
 
 .portfolio {
     height: 100vh;
 }
 
-.scaling{
+.scaling {
     max-width: 100%;
     height: auto;
-    transition:.3s transform linear;
+    transition: .3s transform linear;
+
     &:hover {
         transform: translateX(5px) translateY(5px);
         z-index: -4;
-    };
-    
+    }
+
+    ;
+
 }
 
 @media screen and (max-width: 1024px) {
     .portfolio-items {
         max-width: 100%;
     }
+
     .portfolio {
         height: auto;
     }
@@ -139,7 +285,7 @@ span, p {
     right: 0;
     bottom: 0;
     left: 6.45px;
-    
+
 }
 
 .content-image-1 {
@@ -166,10 +312,37 @@ span, p {
     }
 }
 
+.name, .e-mail, .subject, .textarea {
+    width: 48%;
+    border: none;
+    
+}
+
+.submit {
+    letter-spacing: 2px;
+    border-radius: 0;
+    margin-left: auto;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 18px;
+    border: rgb(92, 190, 252) solid 1px;
+    color: rgb(92, 190, 252);
+    background: none;
+    &:hover {
+        transition: .5s ease-in-out;
+        border: #515152 solid 1px;
+        background-color: rgb(92, 190, 252);
+        color: #515152; 
+    }
+}
 
 
 
-*{
+
+/* Css animations */
+
+* {
     padding: 0;
     margin: 0;
 }
@@ -179,38 +352,109 @@ span, p {
     justify-content: center;
     margin-top: 30px;
 }
-  
+
 .text {
-    width: 23ch; 
+    width: 23ch;
     font-family: 'Nova Mono', monospace;
-    white-space: nowrap; /* не переносить текст на другую строку */
-    overflow: hidden; /* скрываем переполнение контентом */
-    border-right: 3px solid white; /* рисуем курсор */
+    white-space: nowrap;
+    /* не переносить текст на другую строку */
+    overflow: hidden;
+    /* скрываем переполнение контентом */
+    border-right: 3px solid white;
+    /* рисуем курсор */
     animation: cursor 0.75s step-end infinite, printed_text 5s steps(23);
     user-select: none;
 }
-  
+
 @keyframes cursor {
     0% {
-      border-color: white;
+        border-color: white;
     }
-  
+
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  
+
     100% {
-      border-color: white;
+        border-color: white;
     }
 }
-  
+
 @keyframes printed_text {
     from {
-      width: 0;
+        width: 0;
     }
 }
-  
 
+
+@keyframes rubberBand {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        -ms-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        -ms-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        -ms-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1)
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        -ms-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        -ms-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.blast {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    opacity: 1;
+    margin-left: -7px;
+    margin-right: -7px;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
 
 
 
