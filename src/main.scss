@@ -288,30 +288,6 @@ p {
 
 }
 
-.content-image-1 {
-    &:hover {
-        filter: drop-shadow(0 0 10px rgb(0, 153, 255))
-    }
-}
-
-.content-image-2 {
-    &:hover {
-        filter: drop-shadow(0 0 10px rgb(0, 0, 255))
-    }
-}
-
-.content-image-3 {
-    &:hover {
-        filter: drop-shadow(0 0 10px rgb(68, 0, 255))
-    }
-}
-
-.content-image-4 {
-    &:hover {
-        filter: drop-shadow(0 0 10px rgb(0, 0, 0))
-    }
-}
-
 .name, .e-mail, .subject, .textarea {
     width: 48%;
     border: none;

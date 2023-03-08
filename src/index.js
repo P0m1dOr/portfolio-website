@@ -58,3 +58,14 @@ document.querySelectorAll('.blast').forEach(el => {
     })
     
   })
+
+
+socialImage = document.querySelectorAll('.social-images');
+for (var i = 0; i < socialImage.length; i++) {
+        socialImage[i].addEventListener('mouseenter', function(){
+            socialImage[i].fill = '#fff';
+        })
+        socialImage[i].addEventListener('mouseleave', function(){
+            socialImage[i].fill = '#000';
+        })
+}
