@@ -69,3 +69,4 @@ socialImage.forEach(element => {
         element.classList.remove('fill-changer')
     });
 });
+
