@@ -60,13 +60,12 @@ document.querySelectorAll('.blast').forEach(el => {
   })
 
 
-socialImage = document.querySelectorAll('.social-images');
-for (var i = 0; i < socialImage.length; i++) {
-        socialImage[i].addEventListener('mouseenter', function(){
-            socialImage[i].fill = '#fff';
-            console.log('все работает')
-        })
-        socialImage[i].addEventListener('mouseleave', function(){
-            socialImage[i].fill = '#000';
-        })
-}
+document.querySelectorAll('.contact-items').forEach(element => {
+    element.addEventListener('mouseenter', function(){
+        element.style.opacity = '1';
+    })
+    element.addEventListener('mouseleave', function(){
+        element.style.opacity = '.5';
+    })
+});
+

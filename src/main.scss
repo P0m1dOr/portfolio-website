@@ -7,12 +7,6 @@ $danger: rgb(255, 102, 0);
 $info: #006bc0;
 $tertiary: #adb5bd;
 
-
-@font-face {
-    font-family: "Catallina";
-    src: url(#);
-}
-
 h1,
 h2,
 h3,
@@ -147,7 +141,6 @@ p {
 
     &:hover {
         color: $success;
-
     }
 
     &:hover::after {
@@ -285,7 +278,6 @@ p {
     right: 0;
     bottom: 0;
     left: 6.45px;
-
 }
 
 .name, .e-mail, .subject, .textarea {
