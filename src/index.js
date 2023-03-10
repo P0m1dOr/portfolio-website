@@ -59,13 +59,3 @@ document.querySelectorAll('.blast').forEach(el => {
     
   })
 
-
-document.querySelectorAll('.contact-items').forEach(element => {
-    element.addEventListener('mouseenter', function(){
-        element.style.opacity = '1';
-    })
-    element.addEventListener('mouseleave', function(){
-        element.style.opacity = '.5';
-    })
-});
-

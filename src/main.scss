@@ -253,6 +253,11 @@ p {
     ;
 
 }
+.fill-changer{
+    
+    opacity: 0.8 !important;
+    transition: 0.3s ease all;
+}
 
 @media screen and (max-width: 1024px) {
     .portfolio-items {
@@ -274,10 +279,17 @@ p {
 }
 
 .contact-img {
+    opacity:0.3;
     top: 6.9px;
     right: 0;
     bottom: 0;
     left: 6.45px;
+<<<<<<< HEAD
+=======
+    transition:.3s ease-in-out all;
+
+
+>>>>>>> 2b42eb34bc1d86cd87cbedd5a5e3ee93ffdeadd2
 }
 
 .name, .e-mail, .subject, .textarea {
